@@ -1,0 +1,26 @@
+git init
+git status
+git add section1.1.txt
+git add section3.1.txt
+git add section5.1.txt
+git status
+git commit -m 'Committed all 3 files'
+git rm section3.1.txt
+git status
+git reset HEAD section3.1.txt
+git status
+git checkout section3.1.txt
+git status
+git remote add origin https://github.com/davhani/daveRepo.git
+git push -u origin master
+touch README.md
+vim README.md
+esc :x
+git branch ReadMe
+git checkout ReadMe
+git add README.md
+git commit -m 'README is committed to branch ReadMe'
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m 'Committed AllMyCommands file'
